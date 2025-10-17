@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <script>
         // 提供されたJSON形式の問題データを直接埋め込みます
+        // 【重要】JavaScript文字列内のLaTeXコマンドは、バックスラッシュを二重（\\）に修正済み
         const quizData = {
           "questions": [
             {
@@ -54,8 +55,8 @@
               "answerOptions": [
                 { "text": "$-a^3$" },
                 { "text": "$a^{1/3}$" },
-                { "text": "$\\frac{1}{a^3}$", "isCorrect": true },
-                { "text": "$\\frac{1}{a^{-3}}$" }
+                { "text": "$$\\frac{1}{a^3}$$", "isCorrect": true }, 
+                { "text": "$$\\frac{1}{a^{-3}}$$" }                 
               ]
             },
             {
@@ -63,7 +64,7 @@
               "question": "次の計算を指数法則に従って行いなさい。\n$$\\frac{1}{b^{-2}}$$",
               "answerOptions": [
                 { "text": "$-b^2$" },
-                { "text": "$\\frac{1}{b^2}$" },
+                { "text": "$$\\frac{1}{b^2}$$" }, 
                 { "text": "$b^2$", "isCorrect": true },
                 { "text": "$b^{-2}$" }
               ]
@@ -82,9 +83,9 @@
               "questionNumber": 8,
               "question": "次の計算を指数法則に従って行いなさい。\n$$(\\frac{a^4}{b^2})^2 \\cdot b^5$$",
               "answerOptions": [
-                { "text": "$\\frac{a^8}{b^4}$" },
+                { "text": "$$\\frac{a^8}{b^4}$$" }, 
                 { "text": "$a^8 b$", "isCorrect": true },
-                { "text": "$\\frac{a^6}{b^4}$" },
+                { "text": "$$\\frac{a^6}{b^4}$$" }, 
                 { "text": "$a^{10} b^3$" }
               ]
             },
